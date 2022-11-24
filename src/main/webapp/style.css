@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --main-color: #ffc107;
+  --sec-color: #ffab4c;
+  --link-color: #212529;
+  --bg-extra-dark: #343a40;
+}
+
+input,
+select,
+button,
+textarea,
+input:hover,
+button:hover {
+  box-shadow: none !important;
+}
+
+.modal-content input:focus,
+.modal-content textarea:focus {
+  border: 2px solid #555 !important;
+}
+
+body {
+  height: 100vh;
+  position: relative;
+  background-color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+
+body.blur {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  background-color: var(--main-color);
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  color: var(--link-color);
+}
+
+.mh-80 {
+  min-height: 80vh;
+}
+
+.wt {
+  font-family: "Montserrat", "Quicksand", sans-serif;
+}
+
+.rounded-md {
+  border-radius: 8px !important;
+}
+
+.sticky-div {
+  top: 0px;
+  height: 70px;
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+}
+
+.text-blue {
+  color: var(--link-color);
+}
+
+.bg-extra-dark {
+  background-color: var(--link-color);
+}
+
+.bg-blue {
+  background-color: var(--link-color);
+}
+
+.bg-sec {
+  background-color: #f6d365;
+}
+
+.text-dark {
+  color: var(--link-color);
+}
+
+.bg-dark,
+.fix-bg {
+  background-color: var(--link-color) !important;
+}
+
+.purp {
+  color: #511281 !important;
+}
+
+.green {
+  color: #01937c !important;
+}
+
+.rred {
+  color: #ff0000 !important;
+}
+
+.red {
+  color: #ff5c58 !important;
+}
+
+.skin {
+  color: #ff865e !important;
+}
+
+.fw-300 {
+  font-weight: 300;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-700 {
+  font-weight: 700;
+}
+
+.w-50 {
+  width: 50% !important;
+}
+
+.rounded-left {
+  border-radius: 4px 0 0 4px !important;
+}
+
+.rounded-left-lg {
+  border-radius: 8px 0 0 8px !important;
+}
+
+.rounded-right {
+  border-radius: 0 4px 4px 0 !important;
+}
+
+/* Navbar stylings */
+#search-icon {
+  position: absolute;
+  right: 20px;
+  top: 14px;
+  border: none;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.me-search {
+  margin-right: 80px;
+}
+
+.logo-div img {
+  position: fixed;
+  top: 0;
+  left: 70px;
+  height: 70px !important;
+  width: 150px !important;
+}
+
+/* Sidebar styling */
+
+.close-sidebar {
+  top: 20px;
+  right: 0px;
+  position: absolute !important;
+}
+
+.open-sidebar ion-icon {
+  font-size: 3rem !important;
+}
+
+#sidebar {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  height: 100vh !important;
+  width: 320px;
+  position: fixed;
+  overflow-y: auto;
+  background-color: var(--link-color) !important;
+  /* background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%); */
+  /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+  transform: translateX(-100%);
+  transition: transform 500ms ease;
+}
+
+.show-sidebar #sidebar {
+  transform: translateX(0);
+}
+
+#sidebar ul li {
+  width: 100%;
+  list-style: none;
+}
+
+#sidebar a {
+  color: #fff;
+  border: none !important;
+  text-decoration: none !important;
+}
+
+#sidebar a div:hover,
+#sidebar a div.active {
+  color: #000 !important;
+  background-color: #fff !important;
+}
+
+/* Carousel cell animation */
+#categories .carousel-cell div {
+  margin-left: 1rem;
+  transition: transform 400ms ease-in-out;
+}
+
+#categories .carousel-cell div:hover {
+  transform: scale(1.1);
+}
+
+.hov-trans {
+  transition: transform 250ms ease-in-out;
+}
+
+.hov-trans:hover {
+  transform: scale(1.05);
+}
+
+/* Modal Input form */
+#addNewMovie .modal-content {
+  width: 90vw !important;
+  margin-top: 20%;
+  margin-left: -100%;
+}
+
+.modal-input-form .d-flex label {
+  flex-basis: 60%;
+}
+
+/* Tables */
+#all-movies :is(td, th) {
+  text-align: center;
+}
+
+#all-movies img.table-img {
+  height: 120px;
+  width: 120px;
+  object-fit: cover;
+  background-position: center;
+  border-radius: 6px;
+}
